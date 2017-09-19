@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+rect {
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+img {
+  display: block;
+}
+
+.scrollingGradientBackground {
+  background: -webkit-linear-gradient(181deg, #FF067E, #3BD0E3, #7E5589);
+  background: linear-gradient(269deg, #FF067E, #3BD0E3, #7E5589);
+  background-size: 500% 500%;
+  -webkit-animation: ScrollingGradientBackground 10s ease infinite;
+  animation: ScrollingGradientBackground 10s ease infinite;
+}
+.scrollingGradientBackground.dark {
+  background: -webkit-linear-gradient(181deg, #ffcf06, #ace33b, #557c89);
+  background: linear-gradient(269deg, #ffcf06, #ace33b, #557c89);
+  background-size: 500% 500%;
+  -webkit-animation: ScrollingGradientBackground 10s ease infinite;
+  animation: ScrollingGradientBackground 10s ease infinite;
+}
+
+@-webkit-keyframes ScrollingGradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes ScrollingGradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
